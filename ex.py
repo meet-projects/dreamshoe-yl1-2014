@@ -1,5 +1,5 @@
 import pygame
-import buttons
+import buttons 
 
 if __name__=="__main__": 
     pygame.init()
@@ -9,22 +9,22 @@ if __name__=="__main__":
     # button_sq = pygame.Surface([100, 100])
     # main_screen.blit(button_sq, button_rec)
     
-    B1 = buttons.button(150, 100, 200, 200)
+    B1 = buttons.button(150, 100, 200, 200, 'rsz_converse-all-stars.jpg')
     B1.draw(main_screen)
 
-    B2 = buttons.button(650,100,200,200)
+    B2 = buttons.button(650,100,200,200, 'rsz_vans-shoes-era.jpg')
     B2.draw(main_screen)
 
-    B3 = buttons.button(150, 400,200,200)
+    B3 = buttons.button(150, 400,200,200, 'rsz_adidas-f50-adizero.jpg')
     B3.draw(main_screen)
 
-    B4 = buttons.button(650,400,200,200)
+    B4 = buttons.button(650,400,200,200, 'rsz_lacoste10.jpg')
     B4.draw(main_screen)
 
-    B5 = buttons.button(150,700,200,200)
+    B5 = buttons.button(150,700,200,200, 'rsz_jordan-shoes.jpg')
     B5.draw(main_screen)
 
-    B6 =buttons.button(650,700,200,200)
+    B6 =buttons.button(650,700,200,200, 'rsz_img-thing.jpg')
     B6.draw(main_screen)
 
 
