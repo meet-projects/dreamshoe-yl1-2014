@@ -1,5 +1,6 @@
 import pygame
 import buttons 
+import sys
 
 if __name__=="__main__": 
     pygame.init()
@@ -27,10 +28,18 @@ if __name__=="__main__":
     B6 =buttons.button(650,700,200,200, 'rsz_img-thing.jpg')
     B6.draw(main_screen)
 
+    label_rec = pygame.Rect(350, 25, 200, 30)
+
+    orderlabel = pygame.font.Font(None, 50)
+
+    label = orderlabel.render("CHOOSE A SHOE...", 1, (255, 0,0), (41, 218, 206))
+
+    main_screen.blit(label, label_rec)
 
     while True: 
         ev = pygame.event.poll()
-           
+        if ev.type == pygame.QUIT: 
+            sys.exit()
         if ev.type == pygame.MOUSEBUTTONDOWN:
             x, y = ev.pos
             
