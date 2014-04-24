@@ -29,15 +29,6 @@ if __name__=="__main__":
     B6 =buttons.button(650,700,200,200,0, 0, 0, 'rsz_img-thing.jpg')
     B6.draw(main_screen)
 
-<<<<<<< HEAD
-    label_rec = pygame.Rect(350, 25, 200, 30)
-
-    orderlabel = pygame.font.Font(None, 50)
-
-    label = orderlabel.render("CHOOSE A SHOE...", 1, (255, 0,0), (41, 218, 206))
-
-    main_screen.blit(label, label_rec)
-=======
     B7=buttons.button(0,0,1000,1000, 255,255, 255)
 
     B8=buttons.button(60,750,700,700, 0, 0, 0,  'rsz_converse-all-stars.jpg')
@@ -64,8 +55,6 @@ if __name__=="__main__":
     orderlabel = pygame.font.Font(None, 50)
     label = orderlabel.render("CHOOSE A COLOR...", 1, (255, 0, 0), (255, 255, 255))
     
-
->>>>>>> 2f1ef5f7108b2c2ecce830f3479962aab77d3382
 
     while True: 
         ev = pygame.event.poll()
