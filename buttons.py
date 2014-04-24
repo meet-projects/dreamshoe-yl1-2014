@@ -19,12 +19,11 @@ class button(object):
         else:
             main_screen.blit(self.sq, self.rec)
 
-    
-# class label(object):
-#     self.label_rec = pygame.Rect(a, b, c, d)
 
-#     self.orderlabel = pygame.font.Font(None, 50)
+class label(object):
 
-#     self.label = orderlabel.render(text, 1, (255, 0,0), (41, 218, 206))
-
-#     main_screen.blit(self.label, self.label_rec)
+	def __init__(self, a, b, c, d, text):
+		self.label_rec = pygame.Rect(a, b, c, d)
+    	self.orderlabel = pygame.font.Font(None, 50)
+    	self.label = orderlabel.render(text, 1, (255, 0,0), (41, 218, 206))
+    	main_screen.blit(self.label, self.label_rec)
