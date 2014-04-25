@@ -21,6 +21,14 @@ def drawcolors():
     label= orderlabel.render ("BACK", 1,(255,255,255))
     main_screen.blit(label, label_rec)
 
+    B22.draw(main_screen)
+    label_rec = pygame.Rect (540,830,200,100)
+    orderlabel = pygame.font.Font(None,50)
+    label= orderlabel.render ("DONE",1,(255,255,255))
+    main_screen.blit(label, label_rec)
+
+
+
 def firstpage():
     B7.sq.fill((41,218,206))
     B7.draw(main_screen)
@@ -39,6 +47,14 @@ def firstpage():
 def drawcornershoe(filename):
     s=buttons.button(60,750,700,700, 0, 0, 0,  filename)
     s.draw(main_screen)
+
+def lastpage():
+    B7.draw(main_screen)
+    label_rec = pygame.Rect(0, 25, 200, 30)
+    orderlabel = pygame.font.Font(None, 50)
+    label = orderlabel.render("CONGRATULATIONS, THATS YOUR NEW SHOE!!", 1, (255, 0, 0), (41, 218, 206))
+    main_screen.blit(label, label_rec)
+
 
 
 
@@ -99,6 +115,8 @@ if __name__=="__main__":
     # B20= buttons.button(60,750,700,700, 0, 0, 0,  'vans-shoes-era.jpg')
 
     B21=buttons.button(700,800,200,100,0,0,0)
+
+    B22=buttons.button(500,800,200,100,0,0,0)
 
 
 
@@ -165,6 +183,11 @@ if __name__=="__main__":
 
             if B16.rec.collidepoint(x,y):
                 drawcornershoe(shoeclick + "-green.jpg")
+
+            if B22.rec.collidepoint(x,y):
+                lastpage()
+
+
                
                
 
